@@ -17,9 +17,10 @@ function minCostOfRopes(arr) {
 function calculateMinCost() {
   const ropeInput = document.getElementById("ropeInput").value;
   const ropeLengths = ropeInput.split(",").map(Number);
-  
+
   const minCost = minCostOfRopes(ropeLengths);
-  
+
   const resultDiv = document.getElementById("result");
   resultDiv.innerHTML = "Minimum Cost of Ropes: " + minCost;
 }
+
